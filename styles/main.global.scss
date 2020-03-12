@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+// Vendor CSS
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic");
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+@import url("https://fonts.googleapis.com/css?family=Coming+Soon&display=swap");
+@import  "vendor/normalize.css";
+@import  "vendor/milligram-1.3.0/dist/milligram.min.css";
+@import  "vendor/animate.css";
+// Partials
+@import  "partials/variables";
+
+// Overrides
+
+/*-------------------------
+	General Styles
+--------------------------*/
+
+html {
+  background-color: $bg-color;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: $text-color;
+}
+
+a {
+  outline: none;
+  color: inherit;
+  text-decoration: none;
+
+  &:visited {
+    outline: none;
+    color: inherit;
+  }
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+
+/*-------------------------
+	Custom Classes
+--------------------------*/
+
+.wireframe {
+  &__font {
+    font-family: 'Coming Soon', cursive;
+  }
+  &__button {
+    background-color: gray;
+    color: black;
+    border: 2px solid black;
+    font-weight: bold;
+    width: 100%;
+    border-radius: 0px;
+    padding: 0px;
+    &:hover {
+      background-color: darken(gray, 8%);
+      color: black;
+      border: 2px solid black;
+      font-weight: bold;
+    }
+  }
+  &__input {
+    border: 1px solid black !important;
+    border-radius: 0px !important;
+  }
+}
+
+.meMsg {
+  float: right;
+  padding-left: 50%;
+}
+
+.othersMsg {
+  float: left;
+  padding-right: 50%;
+}
+
+.alert {
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}
+
+.disabled {
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+/*-------------------------
+	Component Overrides
+--------------------------*/
+
+#chat-component {
+  @media (min-width: 40.0rem) {
+    padding: 40px;
+  }
+}
+
+#modal-component {
+  margin: auto;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  bottom: 0px;
+  right: 0px;
+  width: 40vh;
+  max-height: 200px;
+  max-width: 90%;
+  &__form {
+    width: 100%;
+  }
+}

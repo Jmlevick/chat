@@ -1,0 +1,15 @@
+/*----------------------------
+  LeaderBoard
+-----------------------------*/
+
+.bubble {
+  width: 100%;
+  &__username {
+    font-weight: bold;
+  }
+  &__message {
+    background-color: lightgray;
+    color: black;
+    padding: 8px;
+  }
+}
