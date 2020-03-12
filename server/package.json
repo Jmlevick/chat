@@ -1,0 +1,35 @@
+{
+  "name": "moons-chat-server",
+  "version": "0.1.0",
+  "description": "Moons Chat Server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com"
+  },
+  "keywords": [
+    "faye",
+    "socket",
+    "js"
+  ],
+  "author": "Manuel Escudero <code@jmlevick.me>",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "faye": "^1.2.4",
+    "faye-redis": "^0.2.0",
+    "http": "0.0.0",
+    "https": "^1.0.0",
+    "permessage-deflate": "^0.1.7"
+  },
+  "devDependencies": {
+    "eslint": "^6.8.0",
+    "nodemon": "^2.0.2"
+  }
+}

@@ -1,0 +1,85 @@
+/*----------------------------
+  LeaderBoard
+-----------------------------*/
+
+.chat {
+  background-color: #fff;
+  box-shadow: 0 0 1px #ccc;
+  overflow: hidden;
+  color: #6b6b6b;
+  height: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  height: 93vh;
+  padding: 20px;
+  overflow-y: auto;
+  &__title {
+    margin-bottom: 0px;
+    font-weight: bolder;
+  }
+  &__header {
+    border-bottom: 1px solid black;
+    width: 100%;
+    height: 70px;
+    position: relative;
+    &__configBtn {
+      position: absolute;
+      top: 8px;
+      right: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      display: grid;
+      grid-template-columns: 20% 80%;
+      grid-column-gap: 8px;
+      justify-items: stretch;
+      align-items: stretch;
+      border: 1px solid black;
+      padding: 2px;
+    }
+    &__userCount {
+      position: absolute;
+      top: -30px;
+      right: 8px;
+      cursor: pointer;
+      font-weight: bold;
+      display: grid;
+      grid-template-columns: 20% 80%;
+      grid-column-gap: 16px;
+      justify-items: stretch;
+      align-items: stretch;
+      padding: 0px;
+    }
+  }
+  &__body {
+    height: 80%;
+    &__legend {
+      text-align: center;
+      padding: 40px;
+      padding-top: 25%;
+    }
+  }
+  &__submitBox {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-column-gap: 10px;
+    justify-items: stretch;
+    align-items: stretch;
+    &__input {
+      background-color: white;
+      border-radius: 0px;
+    }
+    &__button {
+      background-color: gray;
+      font-weight: bold;
+      border: 2px solid black;
+      border-radius: none;
+      &:hover {
+        background-color: darken(gray, 8%);
+        color: black;
+        border: 2px solid black;
+        font-weight: bold;
+      }
+    }
+  }
+}
