@@ -1,0 +1,49 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "eslint:recommended",
+    "airbnb"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+        "jsx": true,
+        "impliedStrict": true
+    }
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "commonjs": true
+  },
+  "rules": {
+    "no-console": 0,
+    "no-debugger": "warn",
+    "babel/new-cap": 1,
+    "babel/no-invalid-this": 1,
+    "babel/object-curly-spacing": 0,
+    "babel/quotes": 1,
+    "babel/semi": 1,
+    "babel/no-unused-expressions": 1,
+    "react/state-in-constructor": 0,
+    "class-methods-use-this": 0,
+    "quotes": 0,
+    "no-underscore-dangle": 0,
+    "camelcase": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/anchor-is-valid": 0
+  },
+  "globals": {
+    "test": true,
+    "expect": true,
+    "jest": true,
+    "beforeEach": true
+  },
+  "plugins": [
+    "babel",
+    "import",
+    "jsx-a11y",
+    "react"
+  ]
+}
